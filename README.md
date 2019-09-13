@@ -1,10 +1,8 @@
 # FWS products:
----
 1. FWS Enterprise
 2. FWS SaaS
 
 ## FWS Advantages
----
 1. High Reliability
 - Uptime 100%
 - Advanced Anti-DDoS attacks
@@ -22,17 +20,14 @@
 - Integration with k8s/Docker-Compose/Rancher RKE
 
 
-### FWS features:
----
+# FWS features:
 1. Common features (like Nginx, Apache, NodeJS)
 2. Advanced features
 
-#### FWS-Enterprise comparison:
----
+# FWS-Enterprise comparison:
 1. Over Nginx
 
 2. Over Apache
 
-##### FWS-SaaS comparison:
----
+# FWS-SaaS comparison:
 1. 
