@@ -1,5 +1,9 @@
 # FWS products:
 1. FWS Enterprise
+Include:
+- Binary
+- User Guide
+- Deployment Guide
 2. FWS SaaS
 
 ## FWS Advantages
