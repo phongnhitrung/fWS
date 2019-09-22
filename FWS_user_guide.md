@@ -1,6 +1,7 @@
 FWS User Guide
 ---
 1. Architecture of web-server
+
 -->/usr/fws/
 	|                  |-->/usr/fws/bin/: Executable files and running scripts of web-server
 |                  |                         |-->/usr/fws/bin/fws_core: Executable file of web-server
@@ -22,6 +23,7 @@ FWS User Guide
                                                    |-->/data/fws/logs/stats\[0-N\].log: Statistic log
                                                    |-->/data/fws/logs/stderr.log: Debug and backtrace log of web-server
 2. Config application
+
 	2.1 Config TCP/IP stack for application
 ```
 host-ipv4-addr=<ipv4 address assigned for webserver>
@@ -38,6 +40,7 @@ client_body_timeout <Timeout for waiting to receive a request. If loading reques
 include <configuration file for a certain website>
 ```
 2.3 Config websites
+
 2.3.1General template config
 ```
 server {
