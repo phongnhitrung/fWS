@@ -22,7 +22,7 @@ FWS User Guide
                                                    |-->/data/fws/logs/stats\[0-N\].log: Statistic log
                                                    |-->/data/fws/logs/stderr.log: Debug and backtrace log of web-server
 2. Config application
-##2.1 Config TCP/IP stack for application
+	2.1 Config TCP/IP stack for application
 ```
 host-ipv4-addr=<ipv4 address assigned for webserver>
 netmask-ipv4-addr=<ipv4 subnet mask of webserver>
@@ -32,13 +32,13 @@ gw-ipv6-addr=<ipv6 gateway address of webserver>
 netmask-ipv6-addr=<ipv6 subnet mask of webserver>
 drop_limited_packet=<advanced options: set 1 for rate limit and anti-synflood at TCP/IP stack>
 ```
-##2.2 Config HTTP layer for application
+2.2 Config HTTP layer for application
 ```
 client_body_timeout <Timeout for waiting to receive a request. If loading request time is over this parameter, the request will be deny to protec from Slow DDOS attack types>
 include <configuration file for a certain website>
 ```
-##2.3 Config websites
-###2.3.1General template config
+2.3 Config websites
+2.3.1General template config
 ```
 server {
     listen       <service port of website>
@@ -54,7 +54,7 @@ server {
     }
 }
 ```
-###2.3.2 Reverse proxy config
+2.3.2 Reverse proxy config
 
 ```
 upstream <upstream name for this website> {
@@ -73,12 +73,12 @@ server {
     }
 }
 ```
-###2.3.2 Statistic caching config
+2.3.2 Statistic caching config
 
 ```
 
 ```
-###2.3.3 AntiDDOS layer7 config
+2.3.3 AntiDDOS layer7 config
 ```
 server {
     ...
