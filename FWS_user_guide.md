@@ -1,27 +1,28 @@
 FWS User Guide
 ---
 1. Architecture of web-server
-
+```
 -->/usr/fws/
-	|                  |-->/usr/fws/bin/: Executable files and running scripts of web-server
-|                  |                         |-->/usr/fws/bin/fws_core: Executable file of web-server
-|                  |                         |-->/usr/fws/bin/fws_cli_core: CLI of web-server
-|                  |-->/usr/fws/config/: Configuration files of web-server
-|                                                |-->/usr/fws/config/fws.conf: TCP/IP stack config for web-server
-|                                                |-->/usr/fws/config/main.conf: HTTP layer main config for web-server (include config for websites)
-|                                                |-->/usr/fws/config/sites/: Config for websites
+|          |-->/usr/fws/bin/: Executable files and running scripts of web-server
+|          |               |-->/usr/fws/bin/fws_core: Executable file of web-server
+|          |               |-->/usr/fws/bin/fws_cli_core: CLI of web-server
+|          |-->/usr/fws/config/: Configuration files of web-server
+|                          |-->/usr/fws/config/fws.conf: TCP/IP stack config for web-server
+|                          |-->/usr/fws/config/main.conf: HTTP layer main config for web-server (include config for websites)
+|                          |-->/usr/fws/config/sites/: Config for websites
 |-->/usr/bin/
-|                  |-->/usr/bin/fws: running script of web-server
-|                  |-->/usr/bin/fws_cli: running CLI script of web-server
+|           |-->/usr/bin/fws: running script of web-server
+|           |-->/usr/bin/fws_cli: running CLI script of web-server
 |-->/data/fws/: Store logs and cached files when running web-server
-                      |-->/data/fws/cached/: Store cached files
-                      |-->/data/fws/rotated_logs/: Store rotated logs
-                      |-->/data/fws/logs: Store current logs of web-server
-                                                   |-->/data/fws/logs/access\[0-N\].log: Access log (N access logs for N cores of web-server)
-                                                   |-->/data/fws/logs/error\[0-N\].log: Error log (error, warning and info message when loading configuration) 
-                                                   |-->/data/fws/logs/system\[0-N\].log: System log (handle exceptions messages)
-                                                   |-->/data/fws/logs/stats\[0-N\].log: Statistic log
-                                                   |-->/data/fws/logs/stderr.log: Debug and backtrace log of web-server
+             |-->/data/fws/cached/: Store cached files
+             |-->/data/fws/rotated_logs/: Store rotated logs
+             |-->/data/fws/logs/: Store current logs of web-server
+                               |-->/data/fws/logs/access\[0-N\].log: Access log (N access logs for N cores of web-server)
+                               |-->/data/fws/logs/error\[0-N\].log: Error log (error, warning and info message when loading configuration) 
+                               |-->/data/fws/logs/system\[0-N\].log: System log (handle exceptions messages)
+                               |-->/data/fws/logs/stats\[0-N\].log: Statistic log
+                               |-->/data/fws/logs/stderr.log: Debug and backtrace log of web-server
+```
 2. Config application
 
 	2.1 Config TCP/IP stack for application
