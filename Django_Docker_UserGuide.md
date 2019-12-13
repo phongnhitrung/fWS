@@ -120,10 +120,13 @@ Lựa chọn website vừa tạo, chọn Edit để chỉnh cấu hình cho webs
 Trong mục Web Template: Chọn django-docker để tạo template config 
 ![Edit template](https://github.com/octvitasut/fWS/blob/master/common/images/docker_django/edit_domain2.PNG)
 
+
 Trong tab cấu hình website, tick chọn SSL Support => Paste nội dung của SSL certificate, SSL priavte key, SSL Intermediate CA vào các box tương ứng
+
 ![SSL add](https://github.com/octvitasut/fWS/blob/master/common/images/docker_django/ssl_add.PNG)
 
-Cấu hình  uwsgi Django-Docker:
+
+### Cấu hình  uwsgi Django-Docker:
 
 Trong thư mục django-docker, tạo một file **mysite_uwsgi.ini** để chứa cấu hình cho wsgi gồm:
 ```ini
@@ -151,7 +154,7 @@ chmod-socket    = 666
 vacuum          = true
 ```
 
-Cấu hình **docker-compose.yml** để chạy uwsgi:
+#### Cấu hình **docker-compose.yml** để chạy uwsgi:
 
 ```yaml
 version: '3'
