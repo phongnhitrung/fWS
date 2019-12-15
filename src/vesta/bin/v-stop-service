@@ -1,0 +1,46 @@
+#!/bin/bash
+# info: stop service
+# options: service
+#
+# The function stops system service.
+
+
+#----------------------------------------------------------#
+#                    Variable&Function                     #
+#----------------------------------------------------------#
+
+# Argument definition
+service=$1
+
+# Includes
+source $VESTA/func/main.sh
+
+
+#----------------------------------------------------------#
+#                    Verifications                         #
+#----------------------------------------------------------#
+
+check_args '1' "$#" 'SERVICE'
+
+
+#----------------------------------------------------------#
+#                       Action                             #
+#----------------------------------------------------------#
+
+if [ "$service" != 'iptables' ]; then
+    if [ "$service" != 'nginx' ]; then
+       service $service stop >/dev/null 2>&1
+       check_result $? "$service stop failed" $E_RESTART
+    else
+       pidof fws_core | xargs kill -9
+else
+    $BIN/v-stop-firewall
+    check_result $? "$service stop failed" $E_RESTART
+fi
+
+
+#----------------------------------------------------------#
+#                       Vesta                              #
+#----------------------------------------------------------#
+
+exit

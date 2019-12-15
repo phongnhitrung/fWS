@@ -1,0 +1,1 @@
+2019/12/03 21:55:03 [emerg] 3045#0: BIO_new_file("/usr/local/vesta/ssl/certificate.crt") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/usr/local/vesta/ssl/certificate.crt','r') error:2006D080:BIO routines:BIO_new_file:no such file)
