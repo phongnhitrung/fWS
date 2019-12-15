@@ -3,10 +3,7 @@
 ---
 
 ## __1. Tạo wesite, cấu hình SQL DB, chứng thư SSL cho website__
-Như trong user guide chung của VESTA CP
-
-![Upload sourcecode](../portal_vestacp/VESTA_CP_USER_GUIDE.md)
-
+Như trong user guide chung của VESTA CP: https://github.com/fagolabs/fWS/blob/master/user_guides/portal_vestacp/VESTA_CP_USER_GUIDE.md
 
 ## __2. Upload source code cho website__
 ### __2.1. Lấy template source code từ trang chủ wordpress về máy local__
