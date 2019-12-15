@@ -36,10 +36,12 @@ if [ "$1" = "no" ]; then
 fi
 
 # Schedule restart
+
 if [ "$1" = 'scheduled' ]; then
     echo "$BIN/$SCRIPT now" >> $VESTA/data/queue/restart.pipe
     exit
 fi
+
 if [ -z "$1" ] && [ "$SCHEDULED_RESTART" = 'yes' ]; then
     echo "$BIN/$SCRIPT now" >> $VESTA/data/queue/restart.pipe
     exit
@@ -52,6 +54,7 @@ fi
 # Reload web system
 service $WEB_SYSTEM reload >/dev/null 2>&1
 rc=$?
+pidof fws_core | xargs kill -1
 
 # Workaround for Ubuntu 12.04
 if [ "$WEB_SYSTEM" == 'apache2' ]; then
@@ -62,7 +65,13 @@ if [ "$WEB_SYSTEM" == 'apache2' ]; then
     fi
 fi
 
-# Resart web system if reload didn't work
+pid=$(pidof fws_core)
+if [ -z "$pid" ]; then
+    fws > /dev/null &
+    fi	
+fi
+
+# Restart web system if reload didn't work
 if [ "$rc" -ne 0 ]; then
     service $WEB_SYSTEM restart >/dev/null 2>&1
     if [ $? -ne 0 ]; then
