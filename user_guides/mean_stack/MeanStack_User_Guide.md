@@ -110,17 +110,17 @@ server {
 Trên Portal, chọn mục WEB => click vào nút "Add webdomain" để thêm domain
 
 Trong màn hình tiếp theo, điền tên domain => click ADD để lưu lại
-![Add Domain 1](https://github.com/octvitasut/fWS/blob/master/common/images/docker_django/add_domain.PNG "Add Domain ")
+![Add Domain 1](https://github.com/octvitasut/fWS/blob/masteruser_guides/django/common/images/docker_django/add_domain.PNG "Add Domain ")
 
 Lựa chọn website vừa tạo, chọn Edit để chỉnh cấu hình cho website
-![Edit domain](https://github.com/octvitasut/fWS/blob/master/common/images/docker_django/edit_domain1.PNG)
+![Edit domain](https://github.com/octvitasut/fWS/blob/masteruser_guides/django/common/images/docker_django/edit_domain1.PNG)
 
 Trong mục Web Template: Chọn neam_stack để tạo template config 
-![Edit template](https://github.com/octvitasut/fWS/blob/master/common/images/docker_django/edit_domain2.PNG)
+![Edit template](https://github.com/octvitasut/fWS/blob/masteruser_guides/django/common/images/docker_django/edit_domain2.PNG)
 
 Trong tab cấu hình website, tick chọn SSL Support => Paste nội dung của SSL certificate, SSL priavte key, SSL Intermediate CA vào các box tương ứng
 
-![SSL add](https://github.com/octvitasut/fWS/blob/master/common/images/docker_django/ssl_add.PNG)
+![SSL add](https://github.com/octvitasut/fWS/blob/masteruser_guides/django/common/images/docker_django/ssl_add.PNG)
 
 
 ### Testing
