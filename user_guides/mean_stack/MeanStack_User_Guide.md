@@ -1,36 +1,30 @@
 
+
 # MEAN STACK
 
-## Install mean stack
+## 1. Cài đặt  mean stack
 ```bash
-#First of all, we have to install some dependencies in order to proceed
-
+# Cài đặt các gói independences
 apt-get install build-essential git fontconfig libpng-dev ruby ruby-dev
 gem install sass
 
-# Install MongoDB
-
+# Cài đặt MongoDB
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
-
 echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.4.list
-
 sudo apt-get update
-
 apt-get install mongodb-org
 
 #Start MongoDB
 systemctl start mongod
 systemctl enable mongod
 
-## Install NodeJS and NPM
+## Cài đặt NodeJS phiên bản 10.x and NPM
 
-curl -sL https://deb.nodesource.com/setup_8.x | -E bash -
-
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 apt-get install nodejs
 
-## Install Yarn and Gulp
+## Cài đặt Yarn and Gulp
 npm install -g yarn
-
 npm install -g gulp
 
 ## Download and Install MEAN from GIT
@@ -40,9 +34,10 @@ sudo npm install
 yarn install --allow-root
 
 ```
-## Create Mean config template for VestaCP (Nginx)
+## 2. Tạo config template (Nginx) cho Mean stack (chỉ tạo một lần duy nhất)
 
 ```nginx
+# File template in folder /usr/local/vesta/templates/nginx/php-fpm/mean_stack.tpl (or mean_stack.stpl cho ssl port)
 server {
     listen      %web_port%;
     server_name %domain_idn% %alias_idn%;
@@ -71,7 +66,7 @@ server {
     }
 
     location / {
-	    # Địa chỉ listen của Mean stack
+        # Địa chỉ listen của Mean stack
         proxy_pass http://127.0.0.1:4200;
     }
 
@@ -102,15 +97,16 @@ server {
 ```
 
 
-## Thêm Domain using Mean template trên VestaCP
+## 3. Thêm Domain using Mean template trên VestaCP
 
-###  Add domain
-
+- **Add domain**
 
 Trên Portal, chọn mục WEB => click vào nút "Add webdomain" để thêm domain
 
 Trong màn hình tiếp theo, điền tên domain => click ADD để lưu lại
 ![Add Domain 1](https://github.com/octvitasut/fWS/blob/master/user_guides/django/common/images/docker_django/add_domain.PNG "Add Domain ")
+
+- **Sửa đổi template cấu hình của domain sang mean_stack template**
 
 Lựa chọn website vừa tạo, chọn Edit để chỉnh cấu hình cho website
 ![Edit domain](https://github.com/octvitasut/fWS/blob/master/user_guides/django/common/images/docker_django/edit_domain1.PNG)
@@ -123,21 +119,20 @@ Trong tab cấu hình website, tick chọn SSL Support => Paste nội dung cu
 ![SSL add](https://github.com/octvitasut/fWS/blob/master/user_guides/django/common/images/docker_django/ssl_add.PNG)
 
 
-### Testing
+## 4. Download source code mean stack
 
 ```bash
-# Install mean project
-git clone https://github.com/didinj/mean-stack-angular6-crud-example.git
-cd mean
+# Clone Project mean stack
+git clone https://github.com/DavideViolante/Angular-Full-Stack.git
+cd Angular-Full-Stack
 
-# Install Angular cli 6.0
-npm install -g @angular/cli@6.0.8
+# Build Project 
+1.  Install Angular CLI:  `npm i -g @angular/cli`
+2. Install all independes: `npm i`
 
 # Start server với port 4200 (sử dụng disableHostCheck để tránh lỗi invalid Host)
-ng serve  --host 0.0.0.0 --disableHostCheck
+ng serve  --port 4200 --host 0.0.0.0 --disableHostCheck true
 
-# Tạo domain meanserver.com trên VestCP sử dụng mean_stack template:
-# ADD: <IP> meanserver.com vào hosts file
-# Truy cập đến domain meanserver trên trình duyệt
+
 ```
 
