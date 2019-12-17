@@ -131,8 +131,9 @@ Trong thư mục project django2.com, tạo một file **mysite_uwsgi.ini** đ�
 
 ##  3. Tạo Template cho Django-Docker 
 
-> # File template in folder /usr/local/vesta/templates/nginx/php-fpm/django-docker.tpl (or django-docker.stpl cho ssl port)
+
 > ```nginx
+> # File template in folder /usr/local/vesta/templates/nginx/php-fpm/django-docker.tpl (or django-docker.stpl cho ssl port)
 > upstream %domain%_%web_port%_django {
 >     server unix:///home/ubuntu/server_django/%domain%/test.sock; # for a file socket
 >     #server 125.212.203.153:8001; # for a web port socket (we'll use this first)
