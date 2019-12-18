@@ -1,5 +1,5 @@
 ---
-# __Hướng dẫn cấu hình WORDPRESS trên VESTACP__
+# __Hướng dẫn cấu hình LARAVEN trên VESTACP__
 ---
 
 ## __1. Tạo wesite, cấu hình SQL DB, chứng thư SSL cho website__
