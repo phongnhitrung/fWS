@@ -146,7 +146,9 @@ ctime=$(date +%s)
 
 # Checking WEB system
 if [ ! -z "$WEB_SYSTEM" ] && [ "$WEB_SYSTEM" != 'remote' ]; then
-    get_srv_state $WEB_SYSTEM
+    echo "WEB_SYSTEM = $WEB_SYSTEM" >> /root/debug.txt
+    fws='fws_core'
+    get_srv_state $fws
     data="NAME='$WEB_SYSTEM' SYSTEM='web server' STATE='$state' CPU='$cpu'"
     data="$data MEM='$mem' RTIME='$rtime'"
 fi

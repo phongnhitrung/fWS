@@ -286,7 +286,6 @@ del_web_config() {
     if [ -e "$conf" ]; then
         sed -i "\|$conf|d" /etc/$1/conf.d/vesta.conf
         rm -f $conf
-        echo "LOG $conf" >> /root/debug.txt
 # Remove config in /usr/bin/fWS/config/main.conf
         sed -i "\|$conf|d" /usr/bin/fWS/config/main.conf
     else
