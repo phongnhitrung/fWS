@@ -4,12 +4,16 @@
 1. Hướng dẫn tạo hosting
 
 _Để tạo hosting các bạn tạo user trước trước vào mục USER_  
-![](https:// wiki.matbao.net/wp-content/uploads/2018/05/Vetacp-1.jpg)
+![](https://github.com/octvitasut/fWS/blob/master/common/images/add_user.PNG)
+
+Điền user info
+![](https://github.com/octvitasut/fWS/blob/master/common/images/user_info.PNG)
 
 _Sau khi tạo xong bạn chuyển quyền truy cập qua user mới tạo_  
-![](https:// wiki.matbao.net/wp-content/uploads/2018/05/Vetacp-2.jpg)
+Thực hiện add domain
+![](https://github.com/octvitasut/fWS/blob/master/common/images/add_domain.PNG)
 
-![](https:// wiki.matbao.net/wp-content/uploads/2018/05/Vetacp-3.jpg)
+![](https://github.com/octvitasut/fWS/blob/master/common/images/domain_info.PNG)
 
 _Lưu ý tạo FTP trong mục ADVANCED OPTIONS_  
 ![](https:// wiki.matbao.net/wp-content/uploads/2018/05/Vetacp-4.jpg)  

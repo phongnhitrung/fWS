@@ -2,10 +2,10 @@
 
 Để điều chỉnh thông số php.ini trong VestaCP. bạn cần đăng nhập vào VestaCP với quyền admin
 
-Tại trang quản trị chọn tab  [SERVER](https://www.matbao.net/cloud-server-linux.html?utm_source=matbao&utm_medium=wiki-post&utm_campaign=mb-wiki "SERVER"), tại dòng httpd chọn  **CONFIGURE**  
-![](https:// wiki.matbao.net/wp-content/uploads/2018/05/php.ini-VestaCP-1.png)  
+Tại trang quản trị chọn tab  **SERVER**, tại dòng httpd chọn  **CONFIGURE**  
+![](https://github.com/octvitasut/fWS/blob/master/common/images/config_server.PNG)  
 Chọn  **CONFIGURE PHP.INI**  
-![](https:// wiki.matbao.net/wp-content/uploads/2018/05/php.ini-VestaCP-2.png)  
+![](https://github.com/octvitasut/fWS/blob/master/common/images/config_php.PNG)  
 Tại đây bạn có thể điều chỉnh những thông số cơ bản như
 
 **post_max_size**
@@ -13,7 +13,8 @@ Tại đây bạn có thể điều chỉnh những thông số cơ bản như
 **upload_max_filesize**
 
 **memory_limit**  
-![](https:// wiki.matbao.net/wp-content/uploads/2018/05/php.ini-VestaCP-3.png)  
+![](https://github.com/octvitasut/fWS/blob/master/common/images/php_config_advan.PNG)  
 Để điều chỉnh một số thông số khác bạn chọn  **AVANCED OPTIONS**  
-**![](https:// wiki.matbao.net/wp-content/uploads/2018/05/php.ini-VestaCP-4.png)**  
+
+**![](https://wiki.matbao.net/wp-content/uploads/2018/05/php.ini-VestaCP-4.png)**  
 Sau khi điều chỉnh thông số bạn chọn  **save**  để lưu cấu hình và kiểm tra lại. Chúc bạn thành công

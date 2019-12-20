@@ -14,14 +14,14 @@ bash sk-php-selector2.sh php55 php56 php70 php71 php72
 ```
 Quá trình cài đặt diễn ra
 
-![](https:// wiki.matbao.net/wp-content/uploads/2018/05/2018-06-15_215516-e1530332693596.png)
+![](https://wiki.matbao.net/wp-content/uploads/2018/05/2018-06-15_215516-e1530332693596.png)
 
 Sau khi cài đặt hoàn tất, bạn đăng nhập vào VestaCP, chọn WEB
 
-![](https:// wiki.matbao.net/wp-content/uploads/2018/05/2018-06-15_215627-e1530332715701.png)
+![](https://wiki.matbao.net/wp-content/uploads/2018/05/2018-06-15_215627-e1530332715701.png)
 
 tại phần Web Template HTTPD chọn phiên bản php cần sử dụng
 
-![](https:// wiki.matbao.net/wp-content/uploads/2018/05/2018-06-15_215745-e1530332744684.png)
+![](https://wiki.matbao.net/wp-content/uploads/2018/05/2018-06-15_215745-e1530332744684.png)
 
 Sau khi điều chỉnh thông số bạn chọn save để lưu cấu hình và kiểm tra lại. Chúc bạn thành công.
