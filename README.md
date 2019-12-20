@@ -1,11 +1,11 @@
 # FWS - A next generation for Web :
-1. FWS Enterprise
+1. FWS Enterprise - Web Server for Enterprise
 
 Include:
 - Binary
 - User Guide
 - Deployment Guide
-2. FWS SaaS
+2. FWS Hosting - Solution for Hosting 
 
 ## FWS Advantages
 1. High Reliability
