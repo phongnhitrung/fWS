@@ -21,3 +21,9 @@ Vào script vst-install-ubuntu.sh thực hiện comment được code thực hi�
 #fi
 
 ```
+
+Nếu gặp lỗi thiếu file thư viện sqlite3.so của php thì thực hiện install lib
+
+```bash
+sudo apt install php7.2-sqlite3
+```
