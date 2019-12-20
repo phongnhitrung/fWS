@@ -14,7 +14,7 @@ Những gói nào không sử dụng bạn nên xóa đi, và hãy tạo ra gói
 
 Trong phần Packages trên menu, bạn ấn vào nút dấu cộng màu xanh để bắt đầu tạo ra một gói host mới.
 
-![Add_Package](add_package.PNG)
+![Add_Package](https://github.com/octvitasut/fWS/blob/master/common/images/add_package.png)
 
 Khi tạo gói, chúng ta sẽ có các thiết lập như sau:
 ![package_option](package_option.PNG)
@@ -105,8 +105,8 @@ Còn lại các thiết lập khác thì bạn chắc cũng biết rồi nên m�
 ## Thay đổi thông số gói cho User
 
 Để thay đổi thông số gói cho User bạn chọn, chon User -> Edit
-![edit_user](edit_user.PNG)
+![edit_user](https://github.com/octvitasut/fWS/blob/master/common/images/edit_user.PNG)
 
 Tại Package chọn gói vừa khởi tạo
-![choose_package](choose_package.PNG)
+![choose_package](https://github.com/octvitasut/fWS/blob/master/common/images/choose_package.PNG)
 

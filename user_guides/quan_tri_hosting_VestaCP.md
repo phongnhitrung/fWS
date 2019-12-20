@@ -59,7 +59,7 @@ Trong mục **Advanced Options**, khi nhấn vào đó, nó sẽ cho Quý khách
 
 Di chuyển chuột vào Website cần xóa, ở bên phải màn hình, sẽ hiện ra thanh quản lý Website. Chọn nút “**Delete**”, nó sẽ hỏi Quý khách xác nhận xóa Website hay không. Chọn “**Yes**” để xóa. _**Lưu ý: Tất cả những dữ liệu trên website sẽ bị xóa vĩnh viễn.**_  
 
-![del_domain](del_domain.PNG)
+![del_domain](https://github.com/octvitasut/fWS/blob/master/common/images/del_domain.PNG)
 
 ### 3. Tạo database và truy cập phpMyAdmin
 
@@ -67,29 +67,30 @@ Di chuyển chuột vào Website cần xóa, ở bên phải màn hình, sẽ hi
 
 Muốn tạo database, Quý khách hãy vào phần  **DATABASE**  và nhấn nút tạo.
 
-![add_db](add_db.PNG)
+![add_db](https://github.com/octvitasut/fWS/blob/master/common/images/add_db.PNG)
 
 Sau đó, Quý khách nhập thông tin database cần tạo, rồi nhấn nút “**Add**”. Trong đó Charset thường để mặc định là “utf8”.
-![db_info](db_info.PNG)
+
+![db_info](https://github.com/octvitasut/fWS/blob/master/common/images/db_info.PNG)
 
 #### Truy cập vào phpMyAdmin
 
 Để truy cập vào  **phpMyAdmin**, trong phần  **DATABASE**  vừa tạo, Quý khách hãy nhấn vào  **phpMyAdmin**.
 
-![phpmyadmin](phpmyadmin.PNG)
+![phpmyadmin](https://github.com/octvitasut/fWS/blob/master/common/images/phpmyadmin.PNG)
 
 Sau đó, nó sẽ chuyển sang một tab mới với giao diện đăng nhập **phpMyAdmin**. Quý khách hãy điền thông tin User và Password đã tạo trước đó.
 
-![phpmyadmin_portal](phpmyadmin_portal.PNG)
+![phpmyadmin_portal](https://github.com/octvitasut/fWS/blob/master/common/images/phpmyadmin_portal.PNG)
 
 ### 4. Tính năng Backup trong VestaCP
 
 Một trong những điểm mạnh của VestaCP là tự động backup hàng ngày. Quý khách có thể download, xóa, phục hồi file backup theo nhu cầu của Quý khách.
-![backup](backup.PNG)
+![backup](https://github.com/octvitasut/fWS/blob/master/common/images/backup.PNG)
 
 Hoặc Quý khách có thể phục hồi từng phần bằng cách chọn **Configure Restore Settings**. Chọn mục cần phục hồi, rồi nhấn vào nút “**Restore**”. Khi hoàn thành việc phục hồi, hệ thống gửi mail thông báo cho Quý khách xác nhận đã phục hồi.
 
-![restore](restore.PNG)
+![restore](https://github.com/octvitasut/fWS/blob/master/common/images/restore.PNG)
 
 ### 5. Quản lý dữ liệu với File Manager
 
@@ -101,11 +102,11 @@ Khi Quý khách mua bản quyền license, lúc này ở trên thanh quản lý 
 
 Khi thêm domain vào, Quý khách nhớ đánh dấu vào mục “**Email Support**” để có thể dùng email riêng theo domain đó. Sau đó Quý khách vào mục “**MAIL**” và bấm “**Add Account**” để thêm một địa chỉ email mới. _**Lưu ý: Mục DKIM Support phải là “Yes”**_.  
 
-![add_mail](add_mail.PNG)
+![add_mail](https://github.com/octvitasut/fWS/blob/master/common/images/add_mail.PNG)
 
 Sau đó Quý khách nhập mail cần tạo và mật khẩu, rồi nhấn “**Add**”.
 
-![mail_info](mail_info.PNG)
+![mail_info](https://github.com/octvitasut/fWS/blob/master/common/images/mail_info.PNG)
 
 Trong mục **Advanced Options**:  
 **Quota**: Giới hạn dung lượng của mail cần gửi (tính bằng MB). Muốn không giới hạn dung lượng, chọn nút Unlimited ∞.  
@@ -113,7 +114,7 @@ Trong mục **Advanced Options**:
 **Forward to**: Mail được gửi đi sẽ gửi một bản sao tới mail được Forward.  
 **Do not store forwarded mail**: Không lưu mail Forward.
 
-![mail_advan](mail_advan.PNG)
+![mail_advan](https://github.com/octvitasut/fWS/blob/master/common/images/mail_advan.PNG)
 
 #### Truy cập vào Web Mail
 
