@@ -68,8 +68,7 @@ fi
 pid=$(pidof fws_core)
 if [ -z "$pid" ]; then
     fws > /dev/null &
-    fi	
-fi
+fi	
 
 # Restart web system if reload didn't work
 if [ "$rc" -ne 0 ]; then

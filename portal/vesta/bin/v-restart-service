@@ -36,10 +36,10 @@ if [ "$service" != "iptables" ]; then
     	fi
     else
     	pidof fws_core | xargs kill -1
-	pid=$(pidof fws_core)
-	if [ -z "$pid" ]; then
-	    log_event 20 "fws_core restart failed"
-    	fi	
+        pid=$(pidof fws_core)
+        if [ -z "$pid" ]; then
+            log_event 20 "fws_core restart failed"
+        fi	
     fi
 
 else
