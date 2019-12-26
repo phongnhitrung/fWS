@@ -47,7 +47,6 @@
 |                 | Statistic                | yes         | yes         | yes         | yes         |
 |                 | Optional Logging         | yes         | yes         | yes         | yes         |
 |                 | Realtime statistic       | yes         | yes         | yes         | yes         |
-| --------------- | ------------------------ | ----------- | ----------- | ----------- | ----------- |
 
 
 ## __2. Hiệu năng__
@@ -59,6 +58,6 @@ Tham khảo số liệu tại https://blog.litespeedtech.com/2018/03/05/compar
 |                               | LITESPEED   | APACHE      | NGINX       | FWS         |
 | ----------------------------- | ----------- | ----------- | ----------- | ----------- |
 | Small static file (<4k)       | 40k rps     | 12k rps     | 26k rps     | 550k rps    |
-| Wordpress                     | 22k rps     | 2k rps      | 9k rps      |             |
+| Wordpress                     | 22k rps     | 2k rps      | 9k rps      | 316k rps    |
 
 
