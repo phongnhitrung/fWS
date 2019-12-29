@@ -1,11 +1,6 @@
 # Vuejs App
 
-## Thêm Domain using Vuejs template trên VestaCP
-
-Thực hiện tương tự như đối với Django hay mean stack
-[Meanstack_Guide](https://github.com/octvitasut/fWS/blob/master/user_guides/mean_stack/MeanStack_User_Guide.md)
-
-## Create Vuejs config template for VestaCP (Nginx)
+## 1. Create Vuejs config template for VestaCP (Nginx)
 Thực hiện tương tự như đối với meanstack (sử dụng proxy_pass để forward đến Vuejs từ nginx)
 
 ```nginx
@@ -95,7 +90,8 @@ server {
     include     %home%/%user%/conf/web/nginx.%domain%.conf*;
 }
 ```
-## Test
+
+## 2. Test With Vuejs Project
 
 ```bash
 #Git clone Vuejs project
@@ -112,3 +108,8 @@ docker-compose up
 # ADD: <IP> meanserver.com vào hosts file
 # Truy cập đến domain meanserver trên trình duyệt
 ```
+
+## 3. Thêm Domain using Vuejs template trên VestaCP
+
+Thực hiện tương tự như đối với Django hay mean stack
+[Meanstack_Guide](https://github.com/octvitasut/fWS/blob/master/user_guides/mean_stack/MeanStack_User_Guide.md)
