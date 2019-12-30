@@ -51,3 +51,28 @@ Vào mục Content, chọn php7.0-FastCGI
 
 ![php](https://github.com/octvitasut/fWS/blob/master/common/ajenti/php_setting.PNG)
 
+## 3. Restart command fws_core
+
+```python
+# Thực hiện sửa code để thực hiện restart fws_core khi build config
+# File /var/lib/ajenti/plugins/vh-nginx/nginx.py
+@plugin
+class  NGINXRestartable (Restartable):
+    def  restart(self):
+        s = ServiceMultiplexor.get().get_one('nginx')
+        if  not s.running:
+            s.start()
+        else:
+            s.command('reload')
+# Restart fws_core
+        restart_command = 'pidof fws_core | xargs kill -1'
+        check_running_command = 'pidof fws_core'
+        run_command = 'fws'
+        try:
+            result = subprocess.check_output(['pidof', 'fws_core'])
+            # Process is running
+            os.system(restart_command)
+        except subprocess.CalledProcessError as e:
+            # No process running => Start process
+            os.system(run_command)
+```
